@@ -1,0 +1,528 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD"],
+    "soc_id": ["321", "339", "356", "415", "457", "530"]
+  },
+  "gs1602_platform":{
+    "owner": "sns_gs1602",
+    ".config":{
+      "owner": "sns_gs1602",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "4"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "49"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "210"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd_2"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".otp_info":{
+      "owner": "sns_gs1602",
+        "otp_data":{ "type": "str", "ver": "0",
+          "data": "0123456789,0123456789,0123456789,0123456789,0123456789,0123456789."
+        }
+    },
+    ".misc_info":{
+      "owner": "sns_gs1602",
+        "dark_avg_dark":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "dark_tnoise_dark":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved1":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved2":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved3":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved4":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved5":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved6":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved7":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "reserved8":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+    },
+    ".sensor_cfg":{
+      "owner": "sns_gs1602",
+      ".cfg":{
+        "owner": "sns_gs1602",
+        "trim_and_delay1":{ "type": "int", "ver": "2",
+          "data": "0x00400B8C"
+        },
+        "delay2":{ "type": "int", "ver": "1",
+          "data": "0x0B8C"
+        },
+        "delay3":{ "type": "int", "ver": "1",
+          "data": "0x0D76"
+        },
+        "delay4":{ "type": "int", "ver": "1",
+          "data": "0x0E74"
+        },
+        "delay5":{ "type": "int", "ver": "1",
+          "data": "0x0F0A"
+        }
+      }
+    },
+    ".als":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "lux_k1":{ "type": "flt", "ver": "0",
+          "data": "1.848097"
+        },
+        "lux_b1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "lux_threshold1":{ "type": "flt", "ver": "0",
+          "data": "2.7054"
+        },
+        "lux_k2":{ "type": "flt", "ver": "0",
+          "data": "1.9567"
+        },
+        "lux_b2":{ "type": "flt", "ver": "0",
+          "data": "-0.29"
+        },
+        "lux_threshold2":{ "type": "flt", "ver": "0",
+          "data": "102.36"
+        },
+        "lux_k3":{ "type": "flt", "ver": "0",
+          "data": "1.9538"
+        },
+        "lux_b3":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "lux_threshold3":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "cct_k1":{ "type": "flt", "ver": "0",
+          "data": "9700.0"
+        },
+        "cct_b1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "cct_k2":{ "type": "flt", "ver": "0",
+          "data": "11300.0"
+        },
+        "cct_b2":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "y_coordinate":{ "type": "flt", "ver": "0",
+          "data": "2479.0"
+        }
+      },
+      ".fac_cal_orignal":{
+        "owner": "sns_gs1602",
+        "lux_k1":{ "type": "flt", "ver": "0",
+          "data": "1.848097"
+        },
+        "lux_b1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "lux_threshold1":{ "type": "flt", "ver": "0",
+          "data": "2.7054"
+        },
+        "lux_k2":{ "type": "flt", "ver": "0",
+          "data": "1.9567"
+        },
+        "lux_b2":{ "type": "flt", "ver": "0",
+          "data": "-0.29"
+        },
+        "lux_threshold2":{ "type": "flt", "ver": "0",
+          "data": "102.36"
+        },
+        "lux_k3":{ "type": "flt", "ver": "0",
+          "data": "1.9538"
+        },
+        "lux_b3":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "lux_threshold3":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "cct_k1":{ "type": "flt", "ver": "0",
+          "data": "9700.0"
+        },
+        "cct_b1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "cct_k2":{ "type": "flt", "ver": "0",
+          "data": "11300.0"
+        },
+        "cct_b2":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "y_coordinate":{ "type": "flt", "ver": "0",
+          "data": "2479.0"
+        }
+      }
+    },
+    ".channel":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "darkbase_r":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "darkbase_g":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "darkbase_b":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "darkbase_c":{ "type": "flt", "ver": "0",
+          "data": "0"
+        },
+        "darkbase_w":{ "type": "flt", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".convert_coef":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "data0":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data1":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data2":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data3":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data4":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data5":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data6":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data7":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data8":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data9":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data10":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data11":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data12":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data13":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data14":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data15":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data16":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data17":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data18":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data19":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data20":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data21":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data22":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data23":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data24":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data25":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data26":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data27":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data28":{ "type": "flt", "ver": "0",
+            "data": "1"
+        },
+        "data29":{ "type": "flt", "ver": "0",
+            "data": "1"
+        }
+      }
+    },
+    ".diff_coef":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "data0":{ "type": "flt", "ver": "0",
+            "data": "0.1429"
+        },
+        "data1":{ "type": "flt", "ver": "0",
+            "data": "0.0771"
+        },
+        "data2":{ "type": "flt", "ver": "0",
+            "data": "0.047594"
+        },
+        "data3":{ "type": "flt", "ver": "0",
+            "data": "0.046127"
+        },
+        "data4":{ "type": "flt", "ver": "0",
+            "data": "1.0253"
+        },
+        "data5":{ "type": "flt", "ver": "0",
+            "data": "0.058279"
+        },
+        "data6":{ "type": "flt", "ver": "0",
+            "data": "1.6439"
+        },
+        "data7":{ "type": "flt", "ver": "0",
+            "data": "1.5703"
+        },
+        "data8":{ "type": "flt", "ver": "0",
+            "data": "0.28713"
+        },
+        "data9":{ "type": "flt", "ver": "0",
+            "data": "0.018419"
+        },
+        "data10":{ "type": "flt", "ver": "0",
+            "data": "0.265130"
+        },
+        "data11":{ "type": "flt", "ver": "0",
+            "data": "-0.1"
+        },
+        "data12":{ "type": "flt", "ver": "0",
+            "data": "1.4089"
+        },
+        "data13":{ "type": "flt", "ver": "0",
+            "data": "0.34382"
+        },
+        "data14":{ "type": "flt", "ver": "0",
+            "data": "1.2858"
+        },
+        "data15":{ "type": "flt", "ver": "0",
+            "data": "0.97686"
+        },
+        "data16":{ "type": "flt", "ver": "0",
+            "data": "0.18204"
+        },
+        "data17":{ "type": "flt", "ver": "0",
+            "data": "-0.006865"
+        },
+        "data18":{ "type": "flt", "ver": "0",
+            "data": "0.60212"
+        },
+        "data19":{ "type": "flt", "ver": "0",
+            "data": "-0.006529"
+        },
+        "data20":{ "type": "flt", "ver": "0",
+            "data": "1.6406"
+        },
+        "data21":{ "type": "flt", "ver": "0",
+            "data": "-0.056973"
+        },
+        "data22":{ "type": "flt", "ver": "0",
+            "data": "1.5447"
+        },
+        "data23":{ "type": "flt", "ver": "0",
+            "data": "-0.10229"
+        }
+      }
+    },
+    ".blk_coef":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "data0":{ "type": "flt", "ver": "0",
+            "data": "0.14935"
+        },
+        "data1":{ "type": "flt", "ver": "0",
+            "data": "0.24662"
+        },
+        "data2":{ "type": "flt", "ver": "0",
+            "data": "0.050619"
+        },
+        "data3":{ "type": "flt", "ver": "0",
+            "data": "-0.38126"
+        },
+        "data4":{ "type": "flt", "ver": "0",
+            "data": "1.1144"
+        },
+        "data5":{ "type": "flt", "ver": "0",
+            "data": "0.26081"
+        },
+        "data6":{ "type": "flt", "ver": "0",
+            "data": "3.269"
+        },
+        "data7":{ "type": "flt", "ver": "0",
+            "data": "-2.847"
+        },
+        "data8":{ "type": "flt", "ver": "0",
+            "data": "0.30917"
+        },
+        "data9":{ "type": "flt", "ver": "0",
+            "data": "-0.098"
+        },
+        "data10":{ "type": "flt", "ver": "0",
+            "data": "0.26718"
+        },
+        "data11":{ "type": "flt", "ver": "0",
+            "data": "-0.41595"
+        },
+        "data12":{ "type": "flt", "ver": "0",
+            "data": "1.5777"
+        },
+        "data13":{ "type": "flt", "ver": "0",
+            "data": "-0.394"
+        },
+        "data14":{ "type": "flt", "ver": "0",
+            "data": "2.5857"
+        },
+        "data15":{ "type": "flt", "ver": "0",
+            "data": "-4.3532"
+        },
+        "data16":{ "type": "flt", "ver": "0",
+            "data": "0.18953"
+        },
+        "data17":{ "type": "flt", "ver": "0",
+            "data": "-0.0531"
+        },
+        "data18":{ "type": "flt", "ver": "0",
+            "data": "0.61133"
+        },
+        "data19":{ "type": "flt", "ver": "0",
+            "data": "0.51998"
+        },
+        "data20":{ "type": "flt", "ver": "0",
+            "data": "1.8156"
+        },
+        "data21":{ "type": "flt", "ver": "0",
+            "data": "0.98381"
+        },
+        "data22":{ "type": "flt", "ver": "0",
+            "data": "3.0569"
+        },
+        "data23":{ "type": "flt", "ver": "0",
+            "data": "-0.42262"
+        }
+      }
+    },
+    ".diff_blk_coef":{
+      "owner": "sns_gs1602",
+      ".fac_cal":{
+        "owner": "sns_gs1602",
+        "data0":{ "type": "flt", "ver": "0",
+            "data": "0.80051"
+        },
+        "data1":{ "type": "flt", "ver": "0",
+            "data": "0.88642"
+        },
+        "data2":{ "type": "flt", "ver": "0",
+            "data": "0.55386"
+        },
+        "data3":{ "type": "flt", "ver": "0",
+            "data": "1.9385"
+        },
+        "data4":{ "type": "flt", "ver": "0",
+            "data": "0.69872"
+        },
+        "data5":{ "type": "flt", "ver": "0",
+            "data": "1.885"
+        },
+        "data6":{ "type": "flt", "ver": "0",
+            "data": "0.54334"
+        },
+        "data7":{ "type": "flt", "ver": "0",
+            "data": "2.2497"
+        },
+        "data8":{ "type": "flt", "ver": "0",
+            "data": "0.53144"
+        },
+        "data9":{ "type": "flt", "ver": "0",
+            "data": "-0.38735"
+        },
+        "data10":{ "type": "flt", "ver": "0",
+            "data": "0.5433"
+        },
+        "data11":{ "type": "flt", "ver": "0",
+            "data": "-0.40685"
+        }
+      }
+    }
+  }
+}

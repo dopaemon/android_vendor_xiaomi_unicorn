@@ -1,0 +1,173 @@
+{
+   "//": "Global parameters",
+  "StructGlobal": {
+	"StructDspGpu":{
+		"paramGatherDspSwitch": 1
+	}
+  },
+  "///": "BokehEffect parameters",
+  "StructMT":{
+	"InResizeMT": 1,
+	"ScatYuvMT": 1,
+	"UvbluMT": 1,
+	"PosProcYMT": 1
+  },
+  "StructDownSamp":{
+	"DowSampRat": 2,
+	"DowSampMeth": 0
+  },
+  "StructDownSampHot": {
+    "DowSampRat": 4,
+	"DowSampMeth": 0
+  },
+  "StructPre": {
+      "StructDof": {
+          "StructDofSubDep": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.0008,
+              "foreDistRat": 0.6,
+              "LabRat": 1.2
+          },
+          "StructDofNorm": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.0003,
+              "foreDistRat": 1.0,
+              "LabRat": 1.4
+          },
+          "StructDofDepStret": {
+              "maxAbnorRat": 0.01,
+              "minAbnorRat": 0.01,
+              "backDist": 0.0007,
+              "foreDistRat": 1.0,
+              "LabRat": 1.2
+          },
+		  "StructDofNight": {
+              "backDistRat_1x": 0.3,
+              "foreDistRat_1x": 0.2,
+              "backDistRat_2x": 0.3,
+              "foreDistRat_2x": 0.3
+          }
+      },
+      "StructDofRefine": {
+          "paramSwitch": 1,
+          "structAlpha": {
+              "paramSwitch": 1,
+              "paramMatSize": 2,
+              "paramMatRadius": 5,
+              "paramMatlowT": 0.25,
+              "paramMathighT": 0.50,
+              "paramBlurRadius": 7
+          },
+          "structErode": {
+              "paramSwitch": 0,
+              "paramRadius": 3
+          },
+          "structWeight": {
+              "paramSwitch": 1,
+              "paramRadius": 5,
+              "paramWeight": 0.3
+          }
+      },
+    "StructRadius": {
+        "StructRadiusSubDep": {
+            "backLeve": 6.5,
+            "foreLeve": 2.0,
+            "apeRat": 2.0,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        },
+        "StructRadiusNorm": {
+            "backLeve": 5,
+            "foreLeve": 1.5,
+            "apeRat": 2.0,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        },
+        "StructRadiusDepStret": {
+            "backLeve": 6.5,
+            "foreLeve": 2.0,
+            "apeRat": 2.0,
+            "backGam": 1.9,
+            "foreGam": 1.0
+        },
+		"StructRadiusNight": {
+            "backLeve": 3,
+            "foreLeve": 1.0,
+            "apeRat": 2.0,
+            "backGam": 1.5,
+            "foreGam": 1.0
+        }
+    },
+      "StructRadiRefine": {
+          "paramSwitch": 0,
+          "paramDilSiz": 7,
+          "paramRadius": 4
+      },
+      "StructSpot": {
+          "paramSwitch": 1,
+          "paramDxFlg": 0,
+          "paramIsoThre": 50,
+          "StructSoft": {
+              "paramMinBrig": 200,
+              "paramEnhanRat": 18,
+              "paramClipHigh": 0
+          },
+          "StructHard": {
+              "paramMinBrig": 200,
+              "paramEnhanRat": 18,
+              "paramClipHigh": 0,
+              "paramMaxContAre": 1200,
+              "paramMinContAre": 25,
+              "paramMaxAix": 25,
+              "paramMinAix": 0,
+              "paramMinGradAvge": 20,
+              "paramMaxGRadCv": 1.2,
+              "paramMaxEccen": 0.9,
+              "paramMamElliErr": 0.15,
+              "paramMinFillRat": 0.9,
+              "paramMaxAmbiVal": 0.75
+          }
+      },
+      "StructWeakFreq": {
+          "paramSwitch": 0,
+          "paramRadius": 3
+      }
+  },
+  "StructProc": {
+	  "StructApeLens":{
+		  "paramSwitch": 0,
+		  "paramYRat": 1.0,
+		  "paramURat": 1.5,
+		  "paramVRat": 1.5
+	  },
+	  "StructGather":{
+		  "paramSwitch": 1,
+		  "paramRadiusScalar": 4
+	  },
+	  "StructScatter":{
+        "paramSwitch": 0,
+        "paramIsTransGauss": 1,
+        "paramIsRaidusWeight":  0
+	  },
+	  "StructUv":{
+        "paramSwitch": 1,
+        "paramBlurRatio": 2,
+		"paramBlurWay": 1
+	  }
+  },
+  "StructPos": {
+	  "StructFusnAlpha":{
+		  "paramSwitch": 0,
+		  "paramlowT": 0.3,
+		  "paramhighT": 0.7,
+		  "paramTranRaidus": 0.0
+	  }
+  },
+  "SturctNoise":{
+	  "paramSwitch": 0,
+	  "paramThre": 6,
+	  "paramPortion": 7
+  }
+}
