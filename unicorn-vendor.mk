@@ -17,6 +17,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider@2.7-service_64 \
     vendor/xiaomi/unicorn/proprietary/vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service \
     vendor/xiaomi/unicorn/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor/xiaomi/unicorn/proprietary/vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service \
     vendor/xiaomi/unicorn/proprietary/vendor/bin/touch_report:$(TARGET_COPY_OUT_VENDOR)/bin/touch_report \
     vendor/xiaomi/unicorn/proprietary/recovery/root/vendor/bin/touch_report:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/bin/touch_report \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Tutu/Tutu_acdb_cal.acdb \
@@ -449,6 +450,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.AGMIPC@1.0-service.rc \
+    vendor/xiaomi/unicorn/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/mdss_dsi_l2s_38_0c_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_l2s_38_0c_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/mdss_dsi_l2s_42_02_0b_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_l2s_42_02_0b_dsc_cmd_mi.xml \
     vendor/xiaomi/unicorn/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
@@ -712,6 +714,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/hw/fingerprint.goodix_fod6.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix_fod6.default.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/hw/gyro_fusion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gyro_fusion_interface.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAF.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSNPE.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/libSnpeHtpV69Stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSnpeHtpV69Stub.so \
@@ -849,6 +852,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.pal@1.0-impl.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.pal@1.0.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib/vendor.xiaomi.hardware.quickcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.quickcamera@1.0.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/camera/com.qti.actuator.unicorn_semco_imx707_ak7314_wide_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.unicorn_semco_imx707_ak7314_wide_actuator.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/camera/com.qti.actuator.unicorn_sunny_s5kjn1_dw9714_tele_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.unicorn_sunny_s5kjn1_dw9714_tele_actuator.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/camera/com.qti.eeprom.unicorn_ofilm_ov32b40_p24c64f_front_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.unicorn_ofilm_ov32b40_p24c64f_front_eeprom.so \
@@ -1058,6 +1063,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/hw/fingerprint.goodix_fod6.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix_fod6.default.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/hw/gyro_fusion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gyro_fusion_interface.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/libAF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAF.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/libHISCppAlgos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHISCppAlgos.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/libMiMotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMiMotion.so \
@@ -1252,10 +1258,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.bgservice@1.0.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so \
     vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0.so \
-    vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
+    vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so \
+    vendor/xiaomi/unicorn/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
 
 PRODUCT_PACKAGES += \
     libagm \
     libar-pal \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service
