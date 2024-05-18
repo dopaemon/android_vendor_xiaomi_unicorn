@@ -1265,6 +1265,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libagm \
     libar-pal \
+    libssccalapi@2.0 \
     vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.xiaomi.hardware.quickcamera@1.0-service \
     vendor.xiaomi.sensor.citsensorservice@2.0-service
